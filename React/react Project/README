@@ -1,0 +1,16 @@
+We are going to build an app that shows tweets about this article and loads new ones in real-time. Here are the requirements:
+
+It should listen to the Twitter streaming API and save new tweets as they come in.
+On save, an event should be emitted to the client-side that will update the views.
+The page should render server-side initially, and the client-side should take it from there.
+We should use infinity scroll pagination to load blocks of 10 tweets at a time.
+New unread tweets should have a notification bar that will prompt the user to view them.
+
+Let’s take a look at some of the tools we are going to use besides React:
+
+Express - A node.js web application framework
+Handlebars - A templating language we are going to write our layout templates in
+Browserify - A dependency bundler that will allow us to use CommonJS syntax
+Mongoose - A MongoDB object modeling library
+Socket.io - Real-time bidirectional event-based communication
+nTwitter - Node.js Twitter API library
